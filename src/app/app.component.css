@@ -1,4 +1,25 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: yellow;
+}
+
+.marquee {
+    width: auto;
+	height: auto;
+	text-align: center;
+	background-color: #b71c1c;
+	color: #ffcdd2;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee h1 {
+    display: inline-block;
+    padding-top: 100%;
+    animation: marquee 2s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(0, -100%); }
 }
